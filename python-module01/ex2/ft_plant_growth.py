@@ -4,21 +4,21 @@
 class Plant:
     """Represent a plant."""
 
-    def __init__(self, name, height, age):
+    def __init__(self, name: str, height: int, age: int) -> None:
         """Initialize a plant."""
         self.name = name
         self.height = height
         self._age = age
 
-    def grow(self):
+    def grow(self) -> None:
         """Increase plant height by 1cm."""
         self.height += 1
 
-    def age(self):
+    def age(self) -> None:
         """Increase plant age by one day."""
         self._age += 1
 
-    def get_info(self):
+    def get_info(self) -> None:
         """Display plant information."""
         print(f"{self.name}: {self.height}cm, {self._age} days old")
 
